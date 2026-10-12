@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>チャレンジテスト単語 スピーキング練習</title>
+<title>チャレンジテストラボ スピーキング練習</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
@@ -235,7 +235,7 @@ function post(obj){return fetch(API,{method:'POST',headers:{'Content-Type':'text
 /* login form */
 function loginForm(){
   const opt=n=>Array.from({length:n},(_,i)=>`<option value="${i+1}">${i+1}</option>`).join('');
-  $('#stage').innerHTML=`<div class="panel"><h2>ランキングの登録をした人</h2><p>発音帳のページで登録した組・番号・あいことばを入れてね。まだ登録していない人は、発音帳のページの「ランキング」で登録してね。</p>
+  $('#stage').innerHTML=`<div class="panel"><h2>ランキングの登録をした人</h2><p>チャレンジテストラボのページで登録した組・番号・あいことばを入れてね。まだ登録していない人は、チャレンジテストラボのページの「ランキング」で登録してね。</p>
    <div class="row"><label>組 <select id="lcls">${opt(5)}</select></label><label>番号 <select id="lno">${opt(45)}</select></label></div>
    <label>あいことば（数字4けた）<input id="lpin" class="spell" style="font-size:1.1rem" inputmode="numeric" maxlength="4" autocomplete="off"></label>
    <div class="acts"><button class="go" id="ldo">続きから使う</button><button class="ghost" id="back">やめる</button></div><p class="qsub" id="lmsg"></p></div>`;
